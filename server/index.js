@@ -7,8 +7,8 @@ var app = express()
 app.use(cors());
 
 var jwtCheck = jwt({
-  secret: '',
-  audience: 'DtNrgjwW8mHh5rm5rPwwL1663JVw34Fu'
+  secret: process.env.AUTH0SECRET,
+  audience: process.env.AUTH0CLIENTID
 });
 
 app.get('/api', (req, res) => {
