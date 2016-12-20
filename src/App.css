@@ -1,3 +1,6 @@
+body, html, #root {
+  background-color: whitesmoke
+}
 .App {
   text-align: center;
 }
