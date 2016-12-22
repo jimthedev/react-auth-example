@@ -1,4 +1,4 @@
-if(process.env.NODE_ENV === 'production') {
+if(process.env.NODE_ENV !== 'production') {
   require('dotenv').config(); // environment variables, used for hiding secrets
 }
 var express = require('express'); // making apis, a webserver
