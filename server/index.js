@@ -24,7 +24,7 @@ var management = new ManagementClient({
 
 // This is how we connect to our database where we'll store data
 //
-var sequelize = new Sequelize(process.env.SEQUELIZEDB);
+var sequelize = new Sequelize(process.env.DATABASE_URL);
 
 // We need to define models. A model describes the structure of
 // something that we want to store in the database. On each model
