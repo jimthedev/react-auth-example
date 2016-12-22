@@ -219,7 +219,7 @@ app.delete('/api/contacts/:contactId', jwtCheck, (req,res) => {
     });
   });
 })
-
-app.listen(3001, () => {
-  console.log('Example app listening on port 3001!')
+var port = process.env.PORT ? process.env.PORT : 3001
+app.listen(port, () => {
+  console.log('Example app listening on port ' + port + '!')
 })
