@@ -1,4 +1,6 @@
-require('dotenv').config(); // environment variables, used for hiding secrets
+if(process.env.NODE_ENV === 'production') {
+  require('dotenv').config(); // environment variables, used for hiding secrets
+}
 var express = require('express'); // making apis, a webserver
 var expressJWT = require('express-jwt'); // jsonwebtoken for express, allow us to limit access to certain routes
 var cors = require('cors'); // only used for dev, but helps to avoid angry browsers
