@@ -6,10 +6,10 @@
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.3.0",
     "@kadira/storybook": "^2.21.0",
-    "@kadira/storybook-addon-knobs": "^1.7.1",
-    "react-scripts": "0.8.4"
+    "@kadira/storybook-addon-knobs": "^1.7.1"
   },
   "dependencies": {
+    "react-scripts": "0.8.4",
     "auth0": "^2.6.0",
     "auth0-lock": "^10.7.2",
     "axios": "^0.15.3",
